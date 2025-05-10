@@ -1,0 +1,48 @@
+cd algorithmicTrading
+python manage.py startapp home
+python manage.py runserver
+
+---
+
+# Hệ thống giao dịch thuật toán
+Thành phần của hệ thống giao dịch thuật toán
+1. Module **Thu thập và xử lý dữ liệu**
+2. Module **Thuật toán**: Thuật toán và mô hình đưa ra quyết định đầu tư
+3. Module **API và đặt lệnh**
+4. Module **Giám sát**
+---
+
+## Xây dựng
+1. **Module thu thập và xử lý dữ liệu**
+- Xây dựng data pieline thu thập, lưu trữ và xử lý dữ liệu theo thời gian thực.
+- Thị trường chứng khoán Việt Nam dùng thư viện **Vnstock**. *Phát triển hệ thống cần có đa dạng nguồn dữ liệu để backup và xác minh tính chính xác của dữ liệu*.
+- Công nghệ xử dụng tham khảo: **Kafka** kết hợp cùng python.
+---
+
+2. **Module thuật toán**:
+- Xây dựng thuật toán để đưa ra quyết định đặt lệnh.
+- Thuật toán giao dịch tùy thuộc vào cách thiết kế, để đưa ra quyết định đầu tư: **Chỉ một mã cổ phiếu**, **Nhóm cổ phiếu cùng ngành**, **toàn bộ nền kinh tế vĩ mô**, **Thuật toán tối ưu hóa đa dạng danh mục**.
+- Kết hợp mô hình toán học, kinh tế và AI/ML/DL tìm ra thời điểm đặt lệnh tối ưu **thiệt hại ít nhất**.
+---
+
+Kiến thức nền tảng:
+
+Tài chính:
+- Kiến thức về thị trường tài chính
+- Phân tích kỹ thuật: trend, indicator, pattern,...
+- Phân tích cơ bản: P/E, balance sheet, earnings,..
+- Microstructure: cơ chế khớp lệnh, order book
+- Arbitrage, statistical arbitrage, pairs trading
+
+Toán, xác suất & thống kê:
+- Xác suất, phân phối xác suất.
+- Hồi quy tuyến tính, phi tuyến tính
+- Thống kê Bayes
+- Kiểm định giả thuyết.
+
+Lâp trình:
+- API
+
+Lệnh CMD nhanh
+- cd algorithmicTrading
+- python manage.py runserver
